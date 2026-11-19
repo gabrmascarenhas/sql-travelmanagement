@@ -136,7 +136,7 @@ CREATE TABLE atividade (
     CONSTRAINT chk_atividade_periodo CHECK (data_hora_fim > data_hora_inicio)
 ) ENGINE=InnoDB;
 
--- 3. Chaves estrangeiras
+-- Chaves estrangeiras
 
 ALTER TABLE ponto_turistico
     ADD CONSTRAINT fk_ponto_cidade FOREIGN KEY (id_cidade) REFERENCES cidade (id_cidade),
